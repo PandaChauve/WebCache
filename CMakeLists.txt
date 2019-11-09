@@ -9,6 +9,8 @@ set(WARNINGS_FLAGS -pedantic -Wall -Wdouble-promotion -Wextra -Wcast-align -Wcas
         -Wunreachable-code -Wunused)
 
 
+
+include_directories(thirdparties/json/single_include/nlohmann)
 add_subdirectory(WebCacheLib)
 add_subdirectory(WebCacheCli)
 if (BUILD_TESTING)
