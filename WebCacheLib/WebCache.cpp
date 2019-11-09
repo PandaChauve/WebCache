@@ -112,3 +112,8 @@ nlohmann::json WebCache::get(const nlohmann::json::json_pointer &pathInCache) co
     return _cache[pathInCache];
   throw std::out_of_range("not in cache");
 }
+
+nlohmann::json WebCache::raw() const {
+  std::lock_guard<std::mutex> scopedLock(_mutex);
+  return _cache;
+}

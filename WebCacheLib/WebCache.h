@@ -74,6 +74,8 @@ namespace Panda {
      * @warning the callback function should not call any function from the cache
      */
     void setRefreshCallback(std::function<void()> refreshed);
+
+    nlohmann::json raw() const;
   private:
     void run(std::chrono::seconds refreshInterval, std::chrono::milliseconds requestsDelay);
     void fetchOne();
