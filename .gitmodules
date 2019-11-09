@@ -1,0 +1,6 @@
+[submodule "thirdparties/json"]
+	path = thirdparties/json
+	url = git@github.com:nlohmann/json.git
+[submodule "thirdparties/curlpp"]
+	path = thirdparties/curlpp
+	url = git@github.com:jpbarrette/curlpp.git
