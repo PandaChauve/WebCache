@@ -1,7 +1,7 @@
 #pragma once
 
 
-#include <HttpClient.h>
+#include <BasicHttpClient.h>
 #include <functional>
 
 namespace Panda {

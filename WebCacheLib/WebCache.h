@@ -1,7 +1,7 @@
 #pragma once
 #include <memory>
 #include <chrono>
-#include "HttpClient.h"
+#include "BasicHttpClient.h"
 #include <json.hpp>
 #include <mutex>
 #include <list>
@@ -13,7 +13,7 @@ namespace Panda {
 
   class WebCache {
   public:
-    WebCache(std::unique_ptr<IHttpClient> client = std::make_unique<HttpClient>());
+    WebCache(std::unique_ptr<IHttpClient> client = std::make_unique<BasicHttpClient>());
     ~WebCache(){
       stop();
     _client = nullptr;

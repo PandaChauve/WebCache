@@ -11,6 +11,8 @@ set(WARNINGS_FLAGS -pedantic -Wall -Wdouble-promotion -Wextra -Wcast-align -Wcas
 
 
 include_directories(thirdparties/json/single_include/nlohmann)
+include_directories(thirdparties/curlpp/include) #todo cleanup
+add_subdirectory(thirdparties/curlpp)
 add_subdirectory(WebCacheLib)
 add_subdirectory(WebCacheCli)
 if (BUILD_TESTING)

@@ -1,5 +1,5 @@
 project(WebCacheTests)
-set(SOURCE_FILES main.cpp Mocks/HttpClientMock.h WebCacheTests.cpp)
+set(SOURCE_FILES main.cpp Mocks/HttpClientMock.h WebCacheTests.cpp HttpClientTests.cpp)
 find_package(GTest REQUIRED)
 include_directories(${GTEST_INCLUDE_DIRS})
 include_directories(${WebCacheLib_SOURCE_DIR})

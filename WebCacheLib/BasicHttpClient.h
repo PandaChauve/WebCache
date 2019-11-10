@@ -20,7 +20,8 @@ namespace Panda {
     virtual HttpResponse get(const std::string& url) const = 0;
   };
 
-  class HttpClient : public IHttpClient {
+  class BasicHttpClient : public IHttpClient {
+  public:
     HttpResponse get(const std::string& url) const override;
   };
 
